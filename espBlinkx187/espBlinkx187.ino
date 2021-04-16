@@ -5,10 +5,11 @@ void setup() {
 }
 
 void loop() {
+  // this loop does a triple
   digitalWrite(LED_BUILTIN, HIGH);
   delay(337);
   digitalWrite(LED_BUILTIN, LOW);
-  delay(3337);
+  delay(3337); // waiting period
   digitalWrite(LED_BUILTIN, HIGH);
   delay(337);
   digitalWrite(LED_BUILTIN, LOW);
