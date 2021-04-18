@@ -21,15 +21,15 @@ void setup() {
 }
 
 void loop() {
-  redSensorValue = analogRead(redSensorPin);
+  float redSensorValue = analogRead(redSensorPin);
   delay(5);
-  greenSensorValue = analogRead(greenSensorPin);
+  float greenSensorValue = analogRead(greenSensorPin);
   delay(5);
-  blueSensorValue = analogRead(blueSensorValue);
+  float blueSensorValue = analogRead(blueSensorValue);
 
-  redValue = redSensorValue/4;
-  greenValue = greenSensorPin/4;
-  blueValue  = blueSensorValue/4;
+  float redValue = redSensorValue/4;
+  float greenValue = greenSensorPin/4;
+  float blueValue  = blueSensorValue/4;
 
   
   // this is console output
