@@ -31,4 +31,18 @@ void loop() {
   greenValue = greenSensorPin/4;
   blueValue  = blueSensorValue/4;
 
+  
+  // this is console output
+  Serial.print('Mapped Sensor Values \t red: ');
+  Serial.print(redValue);
+  Serial.print('\t green: ');
+  Serial.print(greenValue);
+  Serial.print('\t  blue: ');
+  Serial.print(blueValue);
+
+  // now output through LED
+  analogWrite(redLEDPin, redValue);
+  analogWrite(greenLEDPin, greenValue);
+  analogWrite(blueLEDPin, blueValue);
+
 }
