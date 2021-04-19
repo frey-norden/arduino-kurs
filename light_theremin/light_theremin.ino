@@ -1,5 +1,5 @@
   // Light Theremin 
-  // Project 5
+  // Project 06
 
 int sensorvalue;
 int sensorLow = 1023;
@@ -18,13 +18,14 @@ void setup() {
      }
      if (sensorValue < sensorLow) {
         sensorLow = sensorValue;
+      }
   }
-  }
-  
 
+  digitalWrite(ledPin, LOW);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  sensorValue = analogRead(A0);
+  int pitch = map(sensorValue, sensorLow, sensorHigh, 50, 4000);
 
 }

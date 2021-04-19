@@ -1,3 +1,6 @@
+// project 05 ** mood cue
+// 18.4.2021 
+
 #include <Servo.h>
 Servo myServo;
 
@@ -20,5 +23,5 @@ void loop() {
   Serial.println(angle);
 
   myServo.write(angle);
-  delay(15);
+  delay(1500);
 }
