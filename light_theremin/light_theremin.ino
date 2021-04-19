@@ -1,7 +1,7 @@
   // Light Theremin 
   // Project 06
 
-int sensorvalue;
+int sensorvValue;
 int sensorLow = 1023;
 int sensorHigh = 0;
 
@@ -25,7 +25,7 @@ void setup() {
 }
 
 void loop() {
-  sensorValue = analogRead(A0);
+  int sensorValue = analogRead(A0);
   int pitch = map(sensorValue, sensorLow, sensorHigh, 50, 4000);
 
 }
