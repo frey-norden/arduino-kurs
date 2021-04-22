@@ -1,0 +1,21 @@
+Traveling Moai
+
+HCSR04
+Gnd to Gnd FF
+Vcc to 5V via F-MM
+Echo to 16 FF
+Trig to 4 FF
+
+PIEZO
+Gnd to Gnd via F-MMM
+Vcc to 5 via F
+
+LED
+Gnd to Gnd via F-MMM
+Vcc to 17 via FF
+
+LCD
+Gnd to Gnd via F-MMM
+Vcc to 5V via F-MM
+SCL to 21 via FF
+SDA to 22 via FF

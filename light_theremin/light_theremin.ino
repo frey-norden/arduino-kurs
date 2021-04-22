@@ -5,7 +5,7 @@ int sensorvValue;
 int sensorLow = 1023;
 int sensorHigh = 0;
 
-const int ledPin = 13;
+const int ledPin = 8;
 
 void setup() {
   pinMode(ledPin, OUTPUT);
