@@ -14,10 +14,10 @@ int DHTPin = 10;  // the number of the DHT11 sensor pin
 DHT dht(DHTPin, DHTTYPE); // this is DHT object of type at pin
 
 // following are vma303 variable and pinouts
-int GLED= 13; // Wet Indicator at Digital PIN D13
-int RLED= 12; // Dry Indicator at Digital PIN D12
-int SENSE= 0; // Soil Sensor input at Analog PIN A0
-int value= 0;
+int GLED = 13; // Wet Indicator at Digital PIN D13
+int RLED = 12; // Dry Indicator at Digital PIN D12
+int SENSE = 0; // Soil Sensor input at Analog PIN A0
+int value = 0;
 
 void setup() {
   Serial.begin(9600);
