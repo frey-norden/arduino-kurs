@@ -31,21 +31,20 @@ void setup() {
 }
 
 void loop() {
-  // blink 187 esp subroutine follows 
-  // this loop does a triple
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(337);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(3337); // waiting period
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(337);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(337);
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(337);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(337);
-  
+   // blink 187 esp subroutine follows 
+   // this loop does a triple
+   digitalWrite(LED_BUILTIN, HIGH);
+   delay(337);
+   digitalWrite(LED_BUILTIN, LOW);
+   delay(3337); // waiting period
+   digitalWrite(LED_BUILTIN, HIGH);
+   delay(337);
+   digitalWrite(LED_BUILTIN, LOW);
+   delay(337);
+   digitalWrite(LED_BUILTIN, HIGH);
+   delay(337);
+   digitalWrite(LED_BUILTIN, LOW);
+   delay(337);
    // Reading temperature or humidity takes about 250 milliseconds!
    // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
    float h = dht.readHumidity();
