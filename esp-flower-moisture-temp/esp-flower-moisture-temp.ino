@@ -10,9 +10,9 @@
 
 #define DHTTYPE DHT11
 //here we use 14 of ESP32 to read data
-#define DHTPIN A13
+#define DHTPIN A14  // the number of the DHT11 sensor pin14 on esp32 dev kit v1
 
-int DHTPin = 14;  // the number of the DHT11 sensor pin14 on esp32 dev kit v1
+ 
 DHT dht(DHTPIN, DHTTYPE); // this is DHT object of type at pin
 
 // following are vma303 variable and pinouts
@@ -38,19 +38,16 @@ void setup() {
 
 void loop() {
    // blink 187 esp subroutine follows 
-   // this loop does a triple
-   digitalWrite(LED_BUILTIN, HIGH);
-   delay(337);
-   digitalWrite(LED_BUILTIN, LOW);
-   delay(3337); // waiting period
-   digitalWrite(LED_BUILTIN, HIGH);
-   delay(337);
-   digitalWrite(LED_BUILTIN, LOW);
-   delay(337);
-   digitalWrite(LED_BUILTIN, HIGH);
-   delay(337);
-   digitalWrite(LED_BUILTIN, LOW);
-   delay(337);
+   // this loop does a double blink
+   //digitalWrite(LED_BUILTIN, HIGH);
+   //delay(337);
+   //digitalWrite(LED_BUILTIN, LOW);
+   //delay(3337); // waiting period
+   //digitalWrite(LED_BUILTIN, HIGH);
+   //delay(337);
+   //digitalWrite(LED_BUILTIN, LOW);
+   //delay(337);
+   
    // Reading temperature or humidity takes about 250 milliseconds!
    // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
    float h = dht.readHumidity();
