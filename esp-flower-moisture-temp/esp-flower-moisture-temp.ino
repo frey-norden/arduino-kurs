@@ -9,18 +9,24 @@
 #include "DHT.h"
 
 #define DHTTYPE DHT11
+//here we use 14 of ESP32 to read data
+#define DHTPIN A13
 
-int DHTPin = 10;  // the number of the DHT11 sensor pin
-DHT dht(DHTPin, DHTTYPE); // this is DHT object of type at pin
+int DHTPin = 14;  // the number of the DHT11 sensor pin14 on esp32 dev kit v1
+DHT dht(DHTPIN, DHTTYPE); // this is DHT object of type at pin
 
 // following are vma303 variable and pinouts
 int GLED = 13; // Wet Indicator at Digital PIN D13
 int RLED = 12; // Dry Indicator at Digital PIN D12
-int SENSE = 0; // Soil Sensor input at Analog PIN A0
+int SENSE = 12; // Soil Sensor input at Analog input PIN12 on esp32 devkitv1
 int value = 0;
+int LED_BUILTIN = 2;
 
 void setup() {
-  Serial.begin(9600);
+  pinMode (LED_BUILTIN, OUTPUT);
+  delay(1000);
+  Serial.begin(115200);
+  Serial.println();
 
   dht.begin();
   Serial.println(F("DHT11 initiated!"));
