@@ -15,6 +15,21 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // vma303 loop 
+  value= analogRead(SENSE);  // analog input gpio12
+  value= value/10;
+  Serial.print("Flowerpot soil moisture: ");
+  Serial.print(value);
+  Serial.print("\n");
+  
+  if(value<50) {
+      digitalWrite(GLED, HIGH);
+  } else {
+      digitalWrite(RLED,HIGH);
+   }
+   delay(55777);
+   
+   digitalWrite(GLED,LOW);
+   digitalWrite(RLED, LOW);
 
 }
