@@ -36,5 +36,5 @@ Serial.print("Temperature: ");
 Serial.print(t);
 Serial.println(" *C ");
 //we delay a little bit for next read
-delay(2000);
+delay(22000);
 }

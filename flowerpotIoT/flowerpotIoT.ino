@@ -1,7 +1,7 @@
 // flowerpot project -- [arduino uno micro controller, dht11 temp/humidity sensor,
 // vma303 soil moisture sensor, esp32 dev kit radio component
 // IoT with Arduino experimental course -- Haaga-Helia UAS
-//28-4-2021 Helsinki, Finland
+//28-4-2021 Helsinki, Finland -- kodaja ###
 
 // dht 11 libraries and variables
 #include <DHT.h>
