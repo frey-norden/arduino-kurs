@@ -1,6 +1,6 @@
 // mobile code life
 // digital hourglass - project 08 
-// works like you know what !!  what what!!
+// still works like you know what !!  what what!!
 
 const int switchPin = 8;
 
@@ -9,7 +9,7 @@ int switchState, prevSwitchState = 0;
 
 
 int led = 2;
-long interval = 600000; // 10 mins in millis 10 * 60  secs
+long interval = 60000; // 10 mins in millis 10 * 60  secs
 
 
 void setup() {
