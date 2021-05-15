@@ -4,7 +4,8 @@
 const int switchPin = 8;
 
 unsigned long previousTime = 0; 
-int switchState = 0;
+int switchState, prevSwitchState = 0;
+
 
 int led = 2;
 long interval = 600000; // 10 mins in millis 10 * 60  secs
