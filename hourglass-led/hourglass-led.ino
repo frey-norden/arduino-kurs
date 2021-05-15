@@ -1,5 +1,6 @@
 // mobile code life
 // digital hourglass - project 08 
+// works like you know what !!  what what!!
 
 const int switchPin = 8;
 
