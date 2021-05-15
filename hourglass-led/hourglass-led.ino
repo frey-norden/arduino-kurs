@@ -26,22 +26,25 @@ void loop() {
   unsigned  long currentTime = millis();
   if(currentTime - previousTime > interval); {
     previousTime = currentTime;
-    digitalWrite(led, HIGH);  // lights the pin
-    delay(337);
-    digitalWrite(led, LOW);
-    delay(337);
-    digitalWrite(led, HIGH);
-    delay(337);
-    digitalWrite(led, LOW);
-    delay(337);
-    digitalWrite(led, HIGH);
-    delay(337);
-    digitalWrite(led, LOW);
-    delay(337);
-    digitalWrite(led, HIGH);
-    delay(337);
-    digitalWrite(led, LOW);
-    led++;
+    for(int x=2;x<8;x++){
+      digitalWrite(led, HIGH);  // lights the pin
+      delay(337);
+      digitalWrite(led, LOW);
+      delay(337);
+      digitalWrite(led, HIGH);
+      delay(337);
+      digitalWrite(led, LOW);
+      delay(337);
+      digitalWrite(led, HIGH);
+      delay(337);
+      digitalWrite(led, LOW);
+      delay(337);
+      digitalWrite(led, HIGH);
+      delay(337);
+      digitalWrite(led, LOW);
+      led++;
+    }
+    
     
 
     //if(led ==  7){
