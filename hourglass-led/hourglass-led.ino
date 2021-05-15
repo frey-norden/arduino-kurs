@@ -27,11 +27,27 @@ void loop() {
   if(currentTime - previousTime > interval); {
     previousTime = currentTime;
     digitalWrite(led, HIGH);  // lights the pin
+    delay(337);
+    digitalWrite(led, LOW);
+    delay(337);
+    digitalWrite(led, HIGH);
+    delay(337);
+    digitalWrite(led, LOW);
+    delay(337);
+    digitalWrite(led, HIGH);
+    delay(337);
+    digitalWrite(led, LOW);
+    delay(337);
+    digitalWrite(led, HIGH);
+    delay(337);
+    digitalWrite(led, LOW);
     led++;
+    
 
-    if(led ==  7){
+    //if(led ==  7){
       // something happens at end of hour -- lightshow doors pink floyd?
-    }
+      
+    //}
   }
   switchState = digitalRead(switchPin);
   if(switchState != prevSwitchState){
